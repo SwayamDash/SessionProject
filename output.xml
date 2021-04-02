@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210402 17:51:33.738" rpa="false">
+<suite id="s1" name="New" source="D:\Eclipse Workspace\new">
+<suite id="s1-s1" name="Testcases" source="D:\Eclipse Workspace\new\Testcases.robot">
+<test id="s1-s1-t1" name="Tc_01_get_current_date">
+<kw name="Get Current Date" library="DateTime">
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<assign>
+<var>${date}</var>
+</assign>
+<msg timestamp="20210402 17:51:34.059" level="INFO">${date} = 2021-04-02 17:51:34.058</msg>
+<status status="PASS" starttime="20210402 17:51:34.057" endtime="20210402 17:51:34.059"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${date}</arg>
+</arguments>
+<status status="PASS" starttime="20210402 17:51:34.060" endtime="20210402 17:51:34.062"></status>
+</kw>
+<kw name="Subtract Time From Date" library="DateTime">
+<doc>Subtracts time from date and returns the resulting date.</doc>
+<arguments>
+<arg>${date}</arg>
+<arg>5 days</arg>
+</arguments>
+<assign>
+<var>${back_date}</var>
+</assign>
+<msg timestamp="20210402 17:51:34.079" level="INFO">${back_date} = 2021-03-28 17:51:34.058</msg>
+<status status="PASS" starttime="20210402 17:51:34.063" endtime="20210402 17:51:34.080"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${back_date}</arg>
+</arguments>
+<status status="PASS" starttime="20210402 17:51:34.081" endtime="20210402 17:51:34.082"></status>
+</kw>
+<status status="PASS" starttime="20210402 17:51:34.055" endtime="20210402 17:51:34.083" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210402 17:51:34.035" endtime="20210402 17:51:34.085"></status>
+</suite>
+<status status="PASS" starttime="20210402 17:51:33.944" endtime="20210402 17:51:34.090"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="New">New</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Testcases">New.Testcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
